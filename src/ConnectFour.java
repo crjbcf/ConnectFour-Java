@@ -18,7 +18,7 @@ public class ConnectFour
 
         initializeBoard(board); //initialize board
 
-        while(turns < 43) //loop continues as long as there are still turns left. (21 for each player)
+        while(turns < 42) //loop continues as long as there are still turns left. (21 for each player)
         {
             displayBoard(board);
             redDiskDrop(board);
@@ -52,7 +52,7 @@ public class ConnectFour
             System.out.println("Red Player Won!");
             displayBoard(board);
         }
-        else if(turns % 2 == 0) //if turns was even, Yellow player won.
+        else if(turns % 2 == 0 && turns != 42) //if turns was even, Yellow player won.
         {
             System.out.println("Yellow Player Won!");
             displayBoard(board);
@@ -167,7 +167,7 @@ public class ConnectFour
     }
 
 
-    public static void yellowDiskDrop(char[][] board) //this method drops the yellow disk same code as red disk
+    public static void yellowDiskDrop(char[][] board) //this me0thod drops the yellow disk same code as red disk
     {
         int choice = 0;
         Scanner input = new Scanner(System.in);
