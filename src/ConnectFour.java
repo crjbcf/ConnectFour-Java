@@ -1,5 +1,5 @@
 /*
-Project_2: Connect Four Game
+Project: Connect Four Game
 Created by: Christopher Jackson
 This program replicates the Classic Game of Connect Four
 created: 9/24/2021
@@ -167,7 +167,7 @@ public class ConnectFour
     }
 
 
-    public static void yellowDiskDrop(char[][] board) //this me0thod drops the yellow disk same code as red disk
+    public static void yellowDiskDrop(char[][] board) //this method drops the yellow disk same code as red disk
     {
         int choice = 0;
         Scanner input = new Scanner(System.in);
